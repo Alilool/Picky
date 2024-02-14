@@ -196,10 +196,13 @@ footer a {
         padding: 40px;
     }
 
-    .intro-text,
     .intro img {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .intro-text {
+        margin-left: 30px;
     }
 
     .logo {
@@ -225,6 +228,7 @@ footer a {
     .getIt {
         height: 500px;
     }
+
 
 
     .getIt img {
@@ -255,6 +259,9 @@ footer a {
 
 @media (max-width:600px) {
 
+    .intro-text p {
+        font-size: 0.9em;
+    }
 
     header img {
         margin-left: 0px;
