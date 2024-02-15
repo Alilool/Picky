@@ -92,7 +92,25 @@
             text-align: center;
         }
 
+        @media (max-width: 450px) {
+            .review {
+                height: 450px;
+            }
+        }
 
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+            /* Styles for iOS devices (adjust the device conditions if needed) */
+            video {
+                display: none;
+            }
+
+            img {
+                display: block;
+                /* Show the image on iOS devices */
+            }
+        }
 
         @media (max-width: 710px) {
             .text-img {
