@@ -32,7 +32,9 @@
             color: white;
         }
 
-
+        .main-btn {
+            margin-left: 100px;
+        }
 
         footer a {
             color: white;
@@ -41,7 +43,7 @@
         .text-img p {
             color: white;
             max-width: 400px;
-            margin: 40px;
+            margin-left: 100px;
             font-size: 1.3em;
         }
 
@@ -66,6 +68,9 @@
             margin: 20px;
         }
 
+        video {
+            border-radius: 20px;
+        }
 
         ul {
             display: table;
@@ -87,18 +92,46 @@
             text-align: center;
         }
 
-        @media (max-width: 630px) {
+
+
+        @media (max-width: 710px) {
             .text-img {
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .text-img p {
+                margin: 20px;
+            }
+
+            .main-btn {
+                margin-right: 65px;
+            }
+
+            video {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 830px) {
+
+            .text-img p,
+            .main-btn {
+                margin-left: 50px;
+            }
+
+            video {
+                margin-right: 20px;
             }
         }
     </style>
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <a href="./index.html"><img class="logo" height="50px" src="./logo.jpg" alt=""></a>
+        <!--Nav Starting-->
+        <a href="./index.html"><img class="logo" height="50px" src="./logo.jpg" alt="logo"></a>
 
         <nav>
             <a href="./index.html">Home</a>
@@ -106,8 +139,10 @@
             <a href="./about us.html">About us</a>
             <a id="last-link" href="./contact us.html">Contact us</a>
         </nav>
+        <!--Nav Ending-->
 
     </header>
+    <!--Header-->
     <div class="content">
         <h1>About us</h1>
         <div class="text-img">
@@ -118,7 +153,11 @@
                 customers. Whether you're starting your morning or taking a
                 well-deserved break, let Picky Coffee Shop be your go-to
                 destination for quality coffee that exceeds expectations.</p>
-            <img src="./cafe2.jpg" height="400px" alt="">
+            <video autoplay loop muted height="450px">
+                <source src="./Video.mp4" type="video/mp4">
+                <!-- Fallback for browsers that do not support the video tag -->
+                <img src="./cafe2.jpg" height="400px" alt="Cafe image">
+            </video>
             <a class="main-btn" href="./menu.html">Explore Our Menu</a>
         </div>
     </div>
@@ -126,11 +165,11 @@
         <h2>Tired of the Ordinary? We Get It.</h2>
         <p>Join our satisfied customers who have discovered their perfect cup of coffee at Picky.</p>
         <ul>
-            <li>"Picky Coffee Shop has me for all other coffee. Their attention to
+            <li>"Picky Coffee Shop has spoiled me for all other coffee. Their attention to
                 detail and dedication to quality are unmatched." - Sarah A.</li>
             <li>"I used to think all coffee tasted the same until I tried Picky. Now I can't start
                 my day without it!" - Sayed A.</li>
-            <li>"More than just Picky is a community. I always feel welcome and
+            <li>"More than just coffee, Picky is a community. I always feel welcome and
                 inspired when I'm there." - Mariam F.</li>
         </ul>
         <a class="main-btn"
